@@ -1,0 +1,7 @@
+D:\.net\code\GropuWork01\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+D:\.net\code\GropuWork01\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\.net\code\GropuWork01\ClassLibrary1\obj\Debug\ClassLibrary1.Properties.Resources.resources
+D:\.net\code\GropuWork01\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.GenerateResource.cache
+D:\.net\code\GropuWork01\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\.net\code\GropuWork01\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\.net\code\GropuWork01\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
