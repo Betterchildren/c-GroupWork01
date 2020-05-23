@@ -23,11 +23,17 @@ namespace GropuWork01
             try
             {
                 #region  serialPort1设置
+                //设置通信端口
                 serialPort1.PortName = ConfigurationManager.AppSettings["Port"];
+                //设置串行波特率。
                 serialPort1.BaudRate = int.Parse(ConfigurationManager.AppSettings["BaudRate"]);
+                //设置每个字节的标准数据位长度。
                 serialPort1.DataBits = int.Parse(ConfigurationManager.AppSettings["DataBits"]);
+                //设置每个字节的标准停止位数。
                 serialPort1.StopBits = (StopBits)Enum.Parse(typeof(StopBits), "1");
+                //设置奇偶校验检查协议
                 serialPort1.Parity = System.IO.Ports.Parity.None;
+                //设置读取操作未完成时发生超时之前的毫秒数。
                 serialPort1.ReadTimeout = -1;
                 #endregion
                 //Console.WriteLine("111111111111");
@@ -60,10 +66,15 @@ namespace GropuWork01
             try
             {
                 System.Threading.Thread.Sleep(100);
+                //获取接收缓冲区中数据的字节数。
                 int bytes = serialPort1.BytesToRead;
                 byte[] buffer = new byte[bytes];
                 if (bytes == 0) return;
+                //0 要写入字符的 buffer 中的偏移量.   bytes要读取的最大字符数。 如果 count 大于输入缓冲区中的字符数，则读取较少的字符。
                 serialPort1.Read(buffer, 0, bytes);
+                //Console.WriteLine(buffer);
+                //读入十进制内容 42 32 52 49 46 57 32 49 52 46 54 10
+                //读了很长时间才看出来 前面是湿度 后面才是温度
                 string str = ByteArrayToHeXString(buffer);
                 log(str);
             }
@@ -72,10 +83,12 @@ namespace GropuWork01
                 MessageBox.Show(ex.Message);
             }
         }
-
         public static string ByteArrayToHeXString(byte[] data)
         {
-            StringBuilder sb = new StringBuilder(data.Length * 3);
+            StringBuilder sb = new StringBuilder(data.Length * 2);
+            // 先把byte转成字符串 再用0填充字符串的左边 用空格填充字符串右边
+            // 保证每两字节插入一空格
+            // 把8位无符号整型数转成以16进制的string形式再接着从右向左占满两位，占不满用0补齐，再从左向右占满三位，占不满用空格补齐。
             foreach (byte b in data)
                 sb.Append(Convert.ToString(b, 16).PadLeft(2, '0').PadRight(3, ' '));
             return sb.ToString().ToUpper();
@@ -86,12 +99,14 @@ namespace GropuWork01
             {
                 value = value.Replace(" ", "");
                 #region 多线程下显示数据
+                // 在拥有此控件的基础窗口句柄的线程上执行指定的委托。
                 this.txt原始数据.Invoke(new EventHandler(delegate
                 {
                     this.txt原始数据.Text = value;
                 }));
                 this.txt温度.Invoke(new EventHandler(delegate
                 {
+                    // 14 15...22
                     this.txt温度.Text = Class1.UnHex(value.Substring(14, 8), "ASCII");
                 }));
                 this.txt湿度.Invoke(new EventHandler(delegate

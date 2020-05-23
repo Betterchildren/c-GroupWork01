@@ -16,7 +16,10 @@ namespace GropuWork01
             Application.SetCompatibleTextRenderingDefault(false);
             frmLogin fl = new frmLogin();
             fl.ShowDialog();
-            Application.Run(new frmMain());
+            if(fl.DialogResult == DialogResult.OK)
+            {
+                Application.Run(new frmMain());
+            }
         }
         public static string name = "";
     }

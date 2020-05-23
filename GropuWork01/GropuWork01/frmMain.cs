@@ -28,10 +28,12 @@ namespace GropuWork01
 
         private void helpHToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             frmManual fm = new frmManual();
             fm.TopLevel = false;//设置该窗体不为顶级窗体。
             this.IsMdiContainer = true;
             fm.MdiParent = this;
+            fm.WindowState = FormWindowState.Maximized;
             fm.Show(); //正常
         }
 
@@ -51,10 +53,10 @@ namespace GropuWork01
         }
         public void exit()
         {
-            DialogResult dr =
-                MessageBox.Show("确认要退出吗？", "结束提示框",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (DialogResult.Yes == dr)
+            if (MessageBox.Show("确认结束吗？[Yes|No]", "提示",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Warning,
+               MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -82,6 +84,7 @@ namespace GropuWork01
 
         public void getData()
         {
+            CloseChildForm();
             frmGetData fgd = new frmGetData();
             fgd.TopLevel = false;//设置该窗体不为顶级窗体。
             this.IsMdiContainer = true;
@@ -91,11 +94,20 @@ namespace GropuWork01
 
         public void showData()
         {
+            CloseChildForm();
             frmShowData fsd = new frmShowData();
             fsd.TopLevel = false;//设置该窗体不为顶级窗体。
             this.IsMdiContainer = true;
             fsd.MdiParent = this;
             fsd.Show(); //正常
+        }
+
+        private void CloseChildForm()
+        {
+            foreach(Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
         }
     }
 }
