@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassTable.cs" />
     <Compile Include="frmGetData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,7 +71,6 @@
     <Compile Include="frmShowData.designer.cs">
       <DependentUpon>frmShowData.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGetData.resx">

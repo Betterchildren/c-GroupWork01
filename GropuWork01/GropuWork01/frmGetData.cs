@@ -1,10 +1,10 @@
-﻿using System;
+﻿using ClassLibrary1;
+using System;
+using System.Configuration;
 using System.IO;
 using System.IO.Ports;
 using System.Text;
 using System.Windows.Forms;
-using System.Configuration;
-using ClassLibrary1;
 
 namespace GropuWork01
 {
@@ -13,7 +13,6 @@ namespace GropuWork01
         #region 重载 
         public frmGetData()
         {
-            
             InitializeComponent();
         }
         #endregion

@@ -71,14 +71,14 @@
             this.exitToolStripMenuItem});
             this.业务WToolStripMenuItem.Name = "业务WToolStripMenuItem";
             this.业务WToolStripMenuItem.Size = new System.Drawing.Size(64, 21);
-            this.业务WToolStripMenuItem.Text = "业务(W)";
+            this.业务WToolStripMenuItem.Text = "业务(&W)";
             // 
             // 采集数据ToolStripMenuItem
             // 
             this.采集数据ToolStripMenuItem.Image = global::GropuWork01.Properties.Resources._11;
             this.采集数据ToolStripMenuItem.Name = "采集数据ToolStripMenuItem";
             this.采集数据ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.采集数据ToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.采集数据ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.采集数据ToolStripMenuItem.Text = "采集数据";
             this.采集数据ToolStripMenuItem.Click += new System.EventHandler(this.采集数据ToolStripMenuItem_Click);
             // 
@@ -87,20 +87,20 @@
             this.显示数据ToolStripMenuItem1.Image = global::GropuWork01.Properties.Resources._13;
             this.显示数据ToolStripMenuItem1.Name = "显示数据ToolStripMenuItem1";
             this.显示数据ToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
-            this.显示数据ToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
+            this.显示数据ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.显示数据ToolStripMenuItem1.Text = "显示数据";
             this.显示数据ToolStripMenuItem1.Click += new System.EventHandler(this.显示数据ToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(170, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -108,7 +108,7 @@
             // 
             this.helpHToolStripMenuItem.Name = "helpHToolStripMenuItem";
             this.helpHToolStripMenuItem.Size = new System.Drawing.Size(64, 21);
-            this.helpHToolStripMenuItem.Text = "Help(H)";
+            this.helpHToolStripMenuItem.Text = "Help(&H)";
             this.helpHToolStripMenuItem.Click += new System.EventHandler(this.helpHToolStripMenuItem_Click);
             // 
             // toolStrip1
@@ -178,13 +178,13 @@
             this.采集数据ToolStripMenuItem1,
             this.显示数据ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 48);
             // 
             // 采集数据ToolStripMenuItem1
             // 
             this.采集数据ToolStripMenuItem1.Image = global::GropuWork01.Properties.Resources._11;
             this.采集数据ToolStripMenuItem1.Name = "采集数据ToolStripMenuItem1";
-            this.采集数据ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.采集数据ToolStripMenuItem1.Size = new System.Drawing.Size(124, 22);
             this.采集数据ToolStripMenuItem1.Text = "采集数据";
             this.采集数据ToolStripMenuItem1.Click += new System.EventHandler(this.采集数据ToolStripMenuItem1_Click);
             // 
@@ -192,7 +192,7 @@
             // 
             this.显示数据ToolStripMenuItem.Image = global::GropuWork01.Properties.Resources._13;
             this.显示数据ToolStripMenuItem.Name = "显示数据ToolStripMenuItem";
-            this.显示数据ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.显示数据ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.显示数据ToolStripMenuItem.Text = "显示数据";
             this.显示数据ToolStripMenuItem.Click += new System.EventHandler(this.显示数据ToolStripMenuItem_Click);
             // 

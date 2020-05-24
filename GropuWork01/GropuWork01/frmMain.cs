@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace GropuWork01
@@ -18,6 +13,7 @@ namespace GropuWork01
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Text = "单一串口设备数据采集与管理演示示例";
+            // 状态栏的text
             toolStripStatusLabel1.Text = Program.name;
         }
 

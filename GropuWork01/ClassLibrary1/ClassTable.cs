@@ -6,7 +6,7 @@ using System.Data;
 
 namespace ClassLibrary1
 {
-    class ClassTable
+    public class ClassTable
     {
         #region Manager表
         public static DataTable getManagerTable()

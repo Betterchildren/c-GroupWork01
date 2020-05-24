@@ -1,10 +1,3 @@
-D:\.net\code\GropuWork01\GropuWork01\bin\Debug\Manual.txt
-D:\.net\code\GropuWork01\GropuWork01\bin\Debug\app.config
-D:\.net\code\GropuWork01\GropuWork01\bin\Debug\GropuWork01.exe.config
-D:\.net\code\GropuWork01\GropuWork01\bin\Debug\GropuWork01.exe
-D:\.net\code\GropuWork01\GropuWork01\bin\Debug\GropuWork01.pdb
-D:\.net\code\GropuWork01\GropuWork01\bin\Debug\ClassLibrary1.dll
-D:\.net\code\GropuWork01\GropuWork01\bin\Debug\ClassLibrary1.pdb
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.csprojAssemblyReference.cache
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.frmGetData.resources
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.frmLogin.resources
@@ -14,6 +7,13 @@ D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.frmShowData.resources
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.Properties.Resources.resources
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.csproj.GenerateResource.cache
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.csproj.CoreCompileInputs.cache
+D:\.net\code\GropuWork01\GropuWork01\bin\Debug\Manual.txt
+D:\.net\code\GropuWork01\GropuWork01\bin\Debug\app.config
+D:\.net\code\GropuWork01\GropuWork01\bin\Debug\GropuWork01.exe.config
+D:\.net\code\GropuWork01\GropuWork01\bin\Debug\GropuWork01.exe
+D:\.net\code\GropuWork01\GropuWork01\bin\Debug\GropuWork01.pdb
+D:\.net\code\GropuWork01\GropuWork01\bin\Debug\ClassLibrary1.dll
+D:\.net\code\GropuWork01\GropuWork01\bin\Debug\ClassLibrary1.pdb
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.csproj.CopyComplete
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.exe
 D:\.net\code\GropuWork01\GropuWork01\obj\Debug\GropuWork01.pdb

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Text;
 using System.Windows.Forms;
 
 namespace GropuWork01
@@ -33,6 +28,7 @@ namespace GropuWork01
             {
                 MessageBox.Show(ex.Message);
             }
+            this.button1.Focus();
         }
         private void button1_Click(object sender, EventArgs e)
         {
